@@ -1,3 +1,37 @@
+I'm making coffee.
+I go to the kitchen.
+I open the coffee machine, if there is no water left, I put water in the tank.
+I turn on the coffee machine, if there are no coffee beans left, I open the cupboard and take the coffee.
+I pour the coffee into the machine.
+if everything is ready, I take a cup from the cupboard.
+then I put coffee and turn on the coffee machine.
+Done.
+
+
+
+I drive the car.
+I go to the basement.
+unlock the car.
+I start the engine.
+I check if I have windshield fluid, if I don't, I go to the trunk, open the trunk, take the fluid, close the trunk.
+I open the hood and lid. when I pour the liquid, I make sure that I don't spill it.
+if everything is fine, then I can leave by car.
+Done.
+
+
+For 1$ the fee will be 1
+For 5$ the fee will be 1
+For 10$ the fee will be 1
+For 20$ the fee will be 1
+For 50$ the fee will be 1
+For 100$ the fee will be 1
+For 200$ the fee will be 1
+For 500$ the fee will be 2.5
+
+
+
+
+
 1 - 1x1
 5 - 1x5
 10 - 1x10
