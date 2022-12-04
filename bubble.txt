@@ -1,0 +1,22 @@
+int[] array5 = new int[] { 6, 4, 8, 5, 2, 1, 3 }; 
+
+          
+
+            for (int i = 0; i < array5.Length; i++)
+            {
+                for (int j = i + 1; j < array5.Length; j++)
+                {
+                    if (array5[i] > array5[j])
+                    {
+                        int aux = array5[i];
+                        array5[i] = array5[j];
+                        array5[j] = aux;
+                    }
+                }
+            }
+
+            Console.WriteLine("sorted array:");
+            for (int i = 0; i < array5.Length; i++)
+            {
+                Console.Write(array5[i] + " ");
+            }
