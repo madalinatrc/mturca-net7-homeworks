@@ -1,0 +1,43 @@
+int[] array= new int[] {1,2,3,4,5};
+           foreach ( int element in array )
+            {
+                if (element % 2 == 0)
+                {
+                    Console.WriteLine(element);
+                    
+
+                }
+                
+                
+            }
+
+
+            int[] myArray = new int[] { 2, 5, 6, 7, 7, 8, 4, 3, 1, 2 };
+            for (var i = 0; i < myArray.Length-1; i++)
+            {
+                for (var j = 0; j < myArray.Length-1; j++)
+                {
+                    if (myArray[i] == myArray[j])
+                    {
+                        
+                        
+                            Console.WriteLine(i); 
+                        
+                    }
+                }
+            }
+            string[] myList2 = new string[] { "a", "b", "b", "c", "d", "d" };
+            for (var i = 0; i < myList2.Length - 1; i++)
+            {
+                for (var j = 0; j < myList2.Length - 1; j++)
+                {
+                    if (myList2[i] == myList2[j])
+                    {
+                        int indexToRemove = j;
+                        int indexToRemove1 = i;
+
+                        myList2.(indexToRemove);
+
+                    }
+                }
+            }
