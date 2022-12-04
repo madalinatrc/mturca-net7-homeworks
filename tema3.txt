@@ -1,0 +1,64 @@
+2.  int[,] x = new int[,] { { 123, 345, 567 }, { 12, 56, -12 }, { 34, -98, 65 }, { 765, 543, 321 } };
+			Console.WriteLine(x[1,1]);
+			Console.WriteLine(x[2,1]);
+
+            3. List<string> l5 = new List<string> { };
+            Console.WriteLine("introduceti 3 nume");
+
+            string input1 = Console.ReadLine();
+            l5.Add(input1);
+            string input2 = Console.ReadLine();
+            l5.Add(input2);
+            string input3 = Console.ReadLine();
+            l5.Add(input3);
+
+            if (l5.Contains("ana"))
+            {
+                Console.WriteLine("lista contine deja numele ana");
+            }
+            else
+            {
+                Console.WriteLine("ultimul nume introdus este:" + input3 + "\n");
+            }
+
+			4. Stack<int> s1 = new Stack<int>();
+			int input4 = Convert.ToInt32(Console.ReadLine());
+			int input5 = Convert.ToInt32(Console.ReadLine());
+            s1.Push(input4);
+			s1.Push(input5);
+			if ( s1.ElementAt(0) <= 30 || s1.ElementAt(1) <=30)
+			{
+				Console.WriteLine("true");
+			}
+			if (s1.ElementAt(0) + s1.ElementAt(1) == 30)
+			{
+				Console.WriteLine("true");
+			}
+
+
+			else
+			{
+				Console.WriteLine("false");
+			}
+
+            5. Queue<int> q = new Queue<int>();
+            int input6 = Convert.ToInt32(Console.ReadLine());
+            int input7 = Convert.ToInt32(Console.ReadLine());
+            int input8 = Convert.ToInt32(Console.ReadLine());
+            int input9 = Convert.ToInt32(Console.ReadLine());
+            int input10 = Convert.ToInt32(Console.ReadLine());
+            q.Enqueue(input6);
+            q.Enqueue(input7);
+            q.Enqueue(input8);
+            q.Enqueue(input9);
+            q.Enqueue(input10);
+            if (q.ElementAt(0) >= 0 && q.ElementAt(0) % 3 == 0 && q.ElementAt(0) % 7 == 0)
+            {
+                Console.WriteLine("Numarul este ok");
+            }
+            else
+            {
+                q.Dequeue();
+                Console.WriteLine(q.ElementAt(0));
+
+            }
