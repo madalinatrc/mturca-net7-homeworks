@@ -1,0 +1,270 @@
+public class Book
+	{
+		public string title;
+		public string author;
+		public int year;
+
+		public Book(string title, string author,int year)
+		{
+			this.title = title;
+			this.author = author;
+			this.year = year;
+		}
+
+		public string GetTitle()
+		{
+			return this.title;
+		}
+		public string GetAuthor()
+		{
+			return this.author;
+		}
+		public int GetYear()
+		{
+			return this.year;
+		}
+        public string SetAuthor(string v)
+		{
+			return this.author;
+
+        }
+        public string SetTitle(string v)
+		{
+            return this.title;
+		}
+		public int SetYear(int v)
+		{
+            return this.year;
+        }
+
+
+
+
+	public class Product
+	{
+		public string name;
+		public double price;
+		public int quantity;
+
+		public Product(string name, double price,int quantity)
+		{
+			this.name = name;
+			this.price = price;
+			this.quantity = quantity;
+		}
+		 public string GetName()
+		{
+			return this.name;
+		}
+		public double GetPrice()
+		{
+			return this.price;
+		}
+		public int GetQuantity()
+		{
+			return this.quantity;
+		}
+        public string SetName(string v)
+        {
+            return this.name;
+
+        }
+        public int SetQuantity(int v)
+		{ 
+            return this.quantity;
+        }
+        public double SetPrice(double v)
+        {
+            return this.price;
+        }
+
+
+
+
+ public class Animal
+    {
+        public string name;
+        public string species;
+        public string breed;
+        public int age;
+        public string color;
+        public int weight;
+        public bool IsSpayedOrNeutered;
+
+
+        public Animal(string name, string species, string breed, int age, string color, int weight, bool IsSpayedOrNeutered)
+
+
+        {
+            this.name = name;
+            this.species = species;
+            this.breed = breed;
+            this.age = age;
+            this.color = color;
+            this.weight = weight;
+            this.IsSpayedOrNeutered = IsSpayedOrNeutered;
+        }
+
+        public string GetName()
+        {
+            return this.name;
+        }
+        public string GetSpecies()
+        {
+            return this.species;
+        }
+        public string GetBreed()
+        {
+            return this.breed;
+        }
+        public int GetAge()
+        {
+            return this.age;
+        }
+        public string GetColor()
+        {
+            return this.color;
+        }
+        public int GetWeight()
+        {
+            return this.weight;
+        }
+        public bool getIsSpayedOrNeutered(bool isSpayedOrNeutered)
+        {
+            return this.IsSpayedOrNeutered;
+        }
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+        public void SetSpecies(string species)
+        {
+            this.species = species;
+        }
+        public void SetBreed(string breed)
+        {
+            this.breed = breed;
+        }
+        public void SetAge(int age)
+        {
+            this.age = age;
+        }
+        public void SetColor(string color)
+        {
+            this.color = color;
+        }
+        public void SetWeight(int weight)
+        {
+            this.weight = weight;
+        }
+    }
+}
+
+
+	public class Calculator
+	{
+
+            public int add(int x, int y)
+            {
+                return x + y;
+            }
+            public int subtract(int x, int y)
+            {
+                return x - y;
+            }
+            public int multiply(int x, int y)
+            {
+                return x * y;
+            }
+            public int divide(int x, int y)
+            {
+                return x / y;
+            }
+            public double power(double x, double y)
+            {
+            return Math.Pow(x, y);
+
+            }
+            public double squareroot(double x)
+            {
+            return Math.Sqrt(x);
+            }
+
+        }
+    }
+
+
+
+Console.WriteLine("EX1");
+
+Book book = new Book("War and Peace", "Leo Tolstoy", 1869);
+Console.WriteLine(book.GetTitle()); // Outputs "War and Peace"
+Console.WriteLine(book.GetAuthor()); // Outputs "Leo Tolstoy"
+Console.WriteLine(book.GetYear()); // Outputs 1869
+
+
+Book book2 = new Book("Anna Karenina", "Leo Tolstoy", 1877);
+book2.SetTitle("Anna Karenina");
+book2.SetAuthor("Leo Tolstoy");
+book2.SetYear(1877);
+
+Console.WriteLine(book2.GetTitle()); // Outputs "Anna Karenina"
+Console.WriteLine(book2.GetAuthor()); // Outputs "Leo Tolstoy"
+Console.WriteLine(book2.GetYear()); // Outputs 1877
+
+Console.WriteLine("EX2");
+
+
+Product product = new Product("Apple", 0.99, 10);
+
+Console.WriteLine(product.GetName()); // Outputs "Apple"
+Console.WriteLine(product.GetPrice()); // Outputs 0.99
+Console.WriteLine(product.GetQuantity()); // Outputs 10
+
+Product product2 = new Product("Orange", 1.49, 20);
+
+product2.SetName("Orange");
+product2.SetPrice(1.49);
+product2.SetQuantity(20);
+
+Console.WriteLine(product2.GetName()); // Outputs "Orange"
+Console.WriteLine(product2.GetPrice()); // Outputs 1.49
+Console.WriteLine(product2.GetQuantity()); // Outputs 20
+
+Console.WriteLine("EX4");
+
+Calculator calculator = new Calculator();
+
+Console.WriteLine(calculator.add(2, 3)); // Outputs 5
+Console.WriteLine(calculator.subtract(5, 2)); // Outputs 3
+Console.WriteLine(calculator.multiply(3, 4)); // Outputs 12
+Console.WriteLine(calculator.divide(10, 5)); // Outputs 2
+Console.WriteLine(calculator.power(2, 3)); // Outputs 8
+Console.WriteLine(calculator.squareroot(9)); // Outputs 3
+
+Console.WriteLine("EX3");
+
+Animal animal = new Animal("Max", "Dog", "Labrador Retriever", 2, "Yellow", 75, true);
+
+Console.WriteLine(animal.GetName()); // Outputs "Max"
+Console.WriteLine(animal.GetSpecies()); // Outputs "Dog"
+Console.WriteLine(animal.GetBreed()); // Outputs "Labrador Retriever"
+Console.WriteLine(animal.GetAge()); // Outputs 2
+Console.WriteLine(animal.GetColor()); // Outputs "Yellow"
+Console.WriteLine(animal.GetWeight()); // Outputs 75
+
+
+animal.SetName("Buddy");
+animal.SetSpecies("Cat");
+animal.SetBreed("Siamese");
+animal.SetAge(5);
+animal.SetColor("Gray");
+animal.SetWeight(12);
+
+
+Console.WriteLine(animal.GetName()); // Outputs "Buddy"
+Console.WriteLine(animal.GetSpecies()); // Outputs "Cat"
+Console.WriteLine(animal.GetBreed()); // Outputs "Siamese"
+Console.WriteLine(animal.GetAge()); // Outputs 5
+Console.WriteLine(animal.GetColor()); // Outputs "Gray"
+Console.WriteLine(animal.GetWeight()); // Outputs 12
